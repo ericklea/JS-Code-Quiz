@@ -18,3 +18,8 @@ header {
     background: -moz-radial-gradient(#e66465, #9198e5);
     color:black;
 }
+
+.title {
+    font-size: large;
+    text-align: center;
+}
