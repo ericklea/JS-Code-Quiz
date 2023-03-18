@@ -11,5 +11,9 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 }
 
 function showResults(questions, quizContainer, resultsContainer){
-    
+
+    //code goes here
 }
+
+//show questions
+showQuestions(questions, quizContainer);
