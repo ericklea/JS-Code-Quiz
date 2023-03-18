@@ -1,2 +1,8 @@
 var startButton= document.querySelector(".start-button");
 var timerElement= document.querySelector(".timer-count"); 
+
+
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+    
+}
