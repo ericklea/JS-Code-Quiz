@@ -1,11 +1,6 @@
-var startButton= document.querySelector(".start-button");
-var timerElement= document.querySelector(".timer-count"); 
-
-
-
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
-    function showQuestions(questions, quizContainer){
+    function showQuestions(){
 
     var quizQuestions = [
         {
@@ -64,7 +59,20 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 function showResults(questions, quizContainer, resultsContainer){
 
-    //code goes here
+    answersContainer = quizContainer.querySelectorAll('.answers');
+
+    var userAnswer=""
+    var numbCorrect= 0;
+
+    for(var i=0; i<questions.length; i++){
+        userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+        if(userAnswer===questions[i].correctAnswer){
+            numbCorrect++;
+        }
+    }
+
+    resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 }
 
 //show questions
