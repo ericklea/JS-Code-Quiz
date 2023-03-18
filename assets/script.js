@@ -1,2 +1,2 @@
 var startButton= document.querySelector(".start-button");
-var 
+var timerElement= document.querySelector(."timer-count");
