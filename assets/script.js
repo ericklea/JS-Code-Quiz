@@ -1,3 +1,7 @@
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(){
@@ -72,7 +76,7 @@ function showResults(questions, quizContainer, resultsContainer){
         }
     }
 
-    resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    resultsContainer.innerHTML = numbCorrect + ' out of ' + questions.length;
 }
 
 //show questions
