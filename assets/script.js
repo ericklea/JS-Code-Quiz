@@ -70,6 +70,31 @@ function showResults(questions, quizContainer, resultsContainer){
 //show questions
 showQuestions(questions, quizContainer);
 
+var output = [];
+var answers;
+
+for(var i=0; i<questions.length; i++){
+
+    answers = [];
+
+    for(letter in questions[i].answers){
+
+        answers.push(
+            '<label>'
+                + '<input type="radio" name="qiestion'+i+'" value="'+letter+'">'
+                + leter + ':'
+                + questions[i].answers[letter]
+            + '<label>'
+        );
+    }
+
+    output.push(
+        '<div class="question">' + questions[i].question + '</div>'
+        + '<div class="answers">' + answers.join('') + '</div>'
+    );
+}
+
+quizContainer.innerHTML = output.join('');
 //when user clicks submit, show results
 submitButton.onclick = function(){
     showResults(questions,quizContainer, resultsContainer);
