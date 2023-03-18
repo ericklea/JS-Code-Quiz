@@ -9,3 +9,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     // code goes here
 }
+
+function showResults(questions, quizContainer, resultsContainer){
+    
+}
