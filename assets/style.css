@@ -30,3 +30,8 @@ header {
     line-height: 8px;
     margin-top: 20px;
 }
+
+.timer-count {
+    font-size: 8px;
+    height: 15px
+}
