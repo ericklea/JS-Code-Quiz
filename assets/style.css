@@ -20,18 +20,19 @@ header {
 }
 
 .title {
-    font-size: large;
+    font-size: 50px;
     text-align: center;
 }
 
 .start-button {
-    font-size: 16px;
-    height: 30px;
-    line-height: 8px;
-    margin-top: 20px;
+    font-size: 40px;
+    height: 40px;
+    line-height: 16px;
+    margin-top: 40px;
 }
 
 .timer-count {
-    font-size: 8px;
-    height: 15px
+    font-size: 30px;
+    height: 20px;
+    padding: 15px;
 }
