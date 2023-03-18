@@ -23,3 +23,10 @@ header {
     font-size: large;
     text-align: center;
 }
+
+.start-button {
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px;
+}
