@@ -4,5 +4,8 @@ var timerElement= document.querySelector(".timer-count");
 
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-    
+
+    function showQuestions(questions, quizContainer){
+
+    // code goes here
 }
