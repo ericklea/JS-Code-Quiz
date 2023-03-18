@@ -11,3 +11,10 @@ body {
     justify-content: flex-start;
     background:-moz-radial-gradient(#e66465, #9198e5);
 }
+
+header {
+    padding: 40px;
+    text-align: Center;
+    background: -moz-radial-gradient(#e66465, #9198e5);
+    color:black;
+}
