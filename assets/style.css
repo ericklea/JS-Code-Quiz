@@ -48,3 +48,7 @@ header {
 .question {
     font-size: 35px;
 }
+
+.answers {
+    margin-bottom: 20px;
+}
