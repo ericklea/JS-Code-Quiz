@@ -2,6 +2,7 @@ var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(){
@@ -93,7 +94,7 @@ for(var i=0; i<questions.length; i++){
 
         answers.push(
             '<label>'
-                + '<input type="radio" name="qiestion'+i+'" value="'+letter+'">'
+                + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                 + leter + ':'
                 + questions[i].answers[letter]
             + '<label>'
@@ -110,4 +111,8 @@ quizContainer.innerHTML = output.join('');
 //when user clicks submit, show results
 submitButton.onclick = function(){
     showResults(questions,quizContainer, resultsContainer);
+}
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
 }
