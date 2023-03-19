@@ -52,3 +52,7 @@ header {
 .answers {
     margin-bottom: 20px;
 }
+
+#submit {
+    font-size: 20px;
+}
