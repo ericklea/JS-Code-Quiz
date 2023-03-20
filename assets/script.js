@@ -1,11 +1,11 @@
-
+var questions = [
+    {
+     prompt: "What is NOT a JavaScript Data Type?\n(a) String\n(b) Number\n(c) Element\n(d) Boolean",
+     answer: "Element"
+    };
+    {
+        
     }
-}
-    let quizQuestion = {
-            question: 'What is NOT a JavaScript Data Type?',
-            answers: ['String', 'Number', 'Element', 'Boolean']
-            correctAnswer: 2
-        };
         
         function showQuestion(q) {
               // select dom element
