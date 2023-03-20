@@ -18,7 +18,7 @@ h1 {
     align-content: center;
 }
 
-.start-button {
+#start-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,6 @@ h1 {
     border-color:black;
 }
 
-.next-button {
+#next-button {
     font-weight: bold;
 }
