@@ -23,7 +23,12 @@ h1 {
 
 .start-button {
     position: absolute;
+}
+
+.start-button button {
+    font-size: 25px;
     font-weight: bold;
+    padding: 15px 30px;
 }
 
 .container {
