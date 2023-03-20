@@ -1,15 +1,9 @@
-timeLeft = 60;
+var startButton = document.getElementById('start-button')
 
-function countdown() {
-    timeLeft--;
-    document.getElementById("seconds").innerhtml =
-    if (timeLeft > 0) {
-        setTimeout(countdown, 1000);
-    }
+startButton.addEventListener('click', startGame)
+function startGame(){
 
-setTimeout(countdown, 1000);
 }
-
 
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
