@@ -1,8 +1,13 @@
 var startButton = document.getElementById('start-button')
 var quizContainerElement = document.getElementById('quiz-container')
-
+var questionElement = document.getElementById('question')
+var answerButtonsElement = doucment.getElementById('answer-buttons')
 startButton.addEventListener('click', startGame)
-function startGame(){
+
+function startGame() {
+    startButton.classList.add
+    quizContainerElement.classlist.remove
+    setNextQuestion()
 
 }
 var resultsContainer = document.getElementById('results');
@@ -11,7 +16,7 @@ var submitButton = document.getElementById('submit');
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
-    function showQuestions(){
+    function showQuestions(question){
 
     var quizQuestions = [
         {
