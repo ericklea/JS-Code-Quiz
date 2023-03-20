@@ -18,29 +18,12 @@ h1 {
     align-content: center;
 }
 
-#start-button {
+.start-button {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
 }
-
-.large-font {
-    font-size: 3.5em;
-    text-align:center;
-  }
-  
-  .timer {
-    height: 240px;
-    padding: 10px;
-    background: #13293d;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .timer-text {
-    padding: 55px;
-  }
 
 .container {
     width: 500px;
