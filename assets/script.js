@@ -17,6 +17,10 @@ function startGame() {
 
 }
 
+function setnextQuestion() {
+    
+}
+
 function showQuestions(question) {
     questionElement.innerText = question.question
     question.answer.forEach(answer =>) {
@@ -28,7 +32,7 @@ function showQuestions(question) {
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
-        }
+    }
 
 function selectAnswer(e) {
     var selectButton = e.target
