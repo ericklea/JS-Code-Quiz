@@ -53,7 +53,19 @@
             answers: ['String', 'Number', 'Element', 'Boolean']
             correctAnswer: 2
         };
-        {
+        
+        function showQuestion(q) {
+              // select dom element
+            let questionDiv =document.getElementById('question');
+
+            titleDiv.textContent = q.question;
+
+            // selecting by query 
+            document.querySelectorAll('.answers')
+
+        }
+      
+        showQuestion(quiz-question);
             question: "Which symbol is used for comments in JavaScript?",
             answers: {
                 a: "//"
