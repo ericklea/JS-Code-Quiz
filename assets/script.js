@@ -1,11 +1,10 @@
 var startButton = document.getElementById('start-button')
+var quizContainerElement = document.getElementById('quiz-container')
 
 startButton.addEventListener('click', startGame)
 function startGame(){
 
 }
-
-var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
