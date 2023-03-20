@@ -18,4 +18,10 @@ body {
     max-width: 60%;
     border-radius: 5px;
     padding: 10px;
+    
+}
+
+.btn-grid {
+    display: grid;
+    
 }
