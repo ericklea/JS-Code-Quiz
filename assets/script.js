@@ -1,62 +1,58 @@
-var startButton = document.getElementById('start-button')
-var quizContainerElement = document.getElementById('quiz-container')
-var questionElement = document.getElementById('question')
-var answerButtonsElement = doucment.getElementById('answer-buttons')
+//var startButton = document.getElementById('start-button')
+//var quizContainerElement = document.getElementById('quiz-container')
+//var questionElement = document.getElementById('question')
+//var answerButtonsElement = doucment.getElementById('answer-buttons')
 
-startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
+//startButton.addEventListener('click', startGame)
+//nextButton.addEventListener('click', () => {
+    //currentQuestionIndex++
+    //setNextQuestion()
 
 })
 
-function startGame() {
-    startButton.classList.add
-    quizContainerElement.classlist.remove
-    setNextQuestion()
+//function startGame() {
+   // startButton.classList.add
+    //quizContainerElement.classlist.remove
+   // setNextQuestion()
 
 }
 
-function setnextQuestion() {
+//function setnextQuestion() {
 
 }
 
-function showQuestions(question) {
-    questionElement.innerText = question.question
-        var button = document.createElement('button')
-        button.innerText = answer.innerText
-        button.classlist.add('button')
-        if (answer.correct) {
-            button.dataset.correct = answeer.correct 
+//function showQuestions(question) {
+   // questionElement.innerText = question.question
+       // var button = document.createElement('button')
+        //button.innerText = answer.innerText
+       // button.classlist.add('button')
+       // if (answer.correct) {
+           // button.dataset.correct = answeer.correct 
         }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
+       // button.addEventListener('click', selectAnswer)
+       // answerButtonsElement.appendChild(button)
     }
 
-function selectAnswer(e) {
-    var selectButton = e.target
-    var correct = selectedButton.dataset.correct 
-    setStatusClass(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
+//function selectAnswer(e) {
+   // var selectButton = e.target
+   // var correct = selectedButton.dataset.correct 
+   // setStatusClass(document.body, correct)
+    //Array.from(answerButtonsElement.children).forEach(button => {
+       // setStatusClass(button, button.dataset.correct)
     })
 }
-    
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
-    if(correct) {
-        element.classList.add('correct')
+   
+//function setStatusClass(element, correct) {
+   // clearStatusClass(element)
+    //if(correct) {
+       // element.classList.add('correct')
     }
 }
-    var quizQuestions = [ {
-            id: 0,
-            question: "What is NOT a JavaScript Data Type?",
-            answers: [{ text: "String", isCorrect: false },
-                      { text: "Number", isCorrect: false },
-                      { text: "Element", isCorrect: true },
-                      { text: "Boolean", iscorrect: false }
-            ]
-        },
+    let quiz-question = {
+            question: 'What is NOT a JavaScript Data Type?',
+            answers: ['String', 'Number', 'Element', 'Boolean']
+            correctAnswer: 2
+        };
         {
             question: "Which symbol is used for comments in JavaScript?",
             answers: {
