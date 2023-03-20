@@ -1,3 +1,16 @@
+timeLeft = 60;
+
+function countdown() {
+    timeLeft--;
+    document.getElementById("seconds").innerhtml =
+    if (timeLeft > 0) {
+        setTimeout(countdown, 1000);
+    }
+
+setTimeout(countdown, 1000);
+}
+
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
