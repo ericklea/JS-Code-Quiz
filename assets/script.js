@@ -14,6 +14,15 @@ function startGame() {
 
     function showQuestions(question) {
         questionElement.innerText = question.question
+        question.answer.forEach(answer =>) {
+            var button = document.createElement('button')
+            button.innerText = answer.innerText
+            button.classlist.add('button')
+            if (answer.correct) {
+                button.dataset.correct = answeer.correct 
+            }
+
+        }
 
     var quizQuestions = [
         {
