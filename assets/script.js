@@ -61,7 +61,11 @@
             titleDiv.textContent = q.question;
 
             // selecting by query 
-            document.querySelectorAll('.answers')
+            let ans = document.querySelectorAll('.answers');
+
+            ans.forEach(function(element, index){
+                element.textContent = q.answers[index];
+            });
 
         }
       
