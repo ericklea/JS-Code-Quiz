@@ -12,19 +12,28 @@ function startGame() {
 
 }
 
-    function showQuestions(question) {
-        questionElement.innerText = question.question
-        question.answer.forEach(answer =>) {
-            var button = document.createElement('button')
-            button.innerText = answer.innerText
-            button.classlist.add('button')
-            if (answer.correct) {
-                button.dataset.correct = answeer.correct 
-            }
-            button.addEventListener('click', selectAnswer)
-            answerButtonsElement.appendChild(button)
+function showQuestions(question) {
+    questionElement.innerText = question.question
+    question.answer.forEach(answer =>) {
+        var button = document.createElement('button')
+        button.innerText = answer.innerText
+        button.classlist.add('button')
+        if (answer.correct) {
+            button.dataset.correct = answeer.correct 
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
         }
 
+function selectAnswer(e) {
+    var selectButton = e.target
+    var correct = selectedButton.dataset.correct 
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+}
+    
     var quizQuestions = [
         {
             question: "What is NOT a JavaScript Data Type?",
