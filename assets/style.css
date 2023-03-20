@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+h1 {
+  display: flex;
+  align-items: center;
+}
+
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
@@ -65,16 +70,6 @@ button {
   button:focus {
     outline: none;
     background-color: #5e3370;
-}
-  
-.start-button
-.results-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .start-button button {
