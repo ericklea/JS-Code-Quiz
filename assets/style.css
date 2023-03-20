@@ -51,3 +51,7 @@ h1 {
 .button:hover {
     border-color:black;
 }
+
+.next-button {
+    font-weight: bold;
+}
