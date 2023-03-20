@@ -56,4 +56,19 @@ let questions = [
         ]
     },
 ];
+
+let question_count = 0;
+
+window.onload = function(){
+    show(question_count);
+};
+
+function show(count){
+    let question = document.getElementById("questions");
+    let[first, second, third, fourth] = questions[count].options;
+
+    questions.innerhtml = $(count +1). $(questions[count].questions)
+    
+
+}
            
