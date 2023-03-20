@@ -1,10 +1,61 @@
-var questions = [
+let questions = [
     {
-     prompt: "What is NOT a JavaScript Data Type?\n(a) String\n(b) Number\n(c) Element\n(d) Boolean",
-     answer: "Element"
-    };
+        id: 1,
+        question: "What is NOT a JavaScript Data Type?",
+        answer: "Element",
+        option: [
+            "String",
+            "Number",
+            "Element",
+            "Boolean",
+        ]
+    },
     {
-        
+        id: 2,
+        question: "Which symbol is used for comments in JavaScript?",
+        answer: "//",
+        option: [
+            "//",
+            "<!",
+            "#",
+            "&",
+
+        ]
+    },
+    {
+        id: 3,
+        question: "Which of the following is a looping structure in JavaScript?",
+        answer: "For",
+        option: [
+            "Also",
+            "Too",
+            "Four",
+            "For",
+        ]
+    },
+    {
+        id: 4,
+        question: "In JavaScript, what does NULL mean?",
+        answer:  "No Value",
+        option: [
+            "Equal Value",
+            "No Value",
+            "Maximun Value",
+            "Undefined",
+        ]
+    },
+    {
+        id: 5;
+        question: "How do you declare a varialbe in Javascript?",
+        answer: "var x = y"
+        option: [
+            "var x = y",
+            "var & x = y",
+            "x var = y",
+            "y = var + x",
+        ]
+    }
+
     }
         
         function showQuestion(q) {
@@ -38,45 +89,4 @@ var questions = [
         })
       
         showQuestion(quiz-question);
-            question: "Which symbol is used for comments in JavaScript?",
-            answers: {
-                a: "//"
-                b: "<!"
-                c: "#"
-                d: "&"
-
-            },
-            correctAnswer: 'a'
-        },
-        {
-            question: "Which of the following is a looping structure in JavaScript?",
-            answers: {
-                a: "Also"
-                b: "Too"
-                c: "Four"
-                d: "For"
-            },
-            correctAnswer: 'd'
-        },
-        {
-            question: "In JavaScript, what does NULL mean?",
-            answers: {
-                a: "Equal Value"
-                b: "No Value"
-                c: "Maximun Value"
-                d: "Undefined"
-            },
-            correctAnswer: 'b'
-        },
-        {
-            question: "How do you declare a varialbe in Javascript?",
-            answers: {
-                a: "var x = y"
-                b: "var & x = y"
-                c: "x var = y"
-                d: "y = var + x"
-            },
-            correctAnswer: 'a'
-        }
-    ];
-}
+           

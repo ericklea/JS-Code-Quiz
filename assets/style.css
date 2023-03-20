@@ -25,6 +25,7 @@ body {
 .question-container {
     width: 500px;
     border-radius: 5px;
+    display: grid
 }
 
 .question-container header {
