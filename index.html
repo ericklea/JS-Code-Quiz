@@ -15,7 +15,7 @@
     <span id="count">60</span> seconds
     <button onclick="start()">START</button>
 <body>
-    
+    <!--Quiz Questions-->
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
             <h2 id="question"></h2>
@@ -37,7 +37,17 @@
                   <label for="d" id="d_text"></label>
                 </li>
               </ul>
+              <!--Submit Answer Button-->
               <button id="submit">Submit</button>
+        </div>
+        <!--Score Tracker-->
+        <div id="score" class="score">
+            <div id="score-area" class="score-area"></div>
+            <form id="initials" class="initials"></form>
+            <div id="saveButton" class="saveButton"></div>
+        </div>
+        <div id="highScores" class="highScores">
+            <div id="high-score-title"></div>
         </div>
     </div>
         <script src="assets/script.js"></script>
