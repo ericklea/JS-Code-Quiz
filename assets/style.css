@@ -25,6 +25,23 @@ h1 {
     font-weight: bold;
 }
 
+.large-font {
+    font-size: 3.5em;
+    text-align:center;
+  }
+  
+  .timer {
+    height: 240px;
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .timer-text {
+    padding: 55px;
+  }
+
 .container {
     width: 500px;
     max-width: 75%;
