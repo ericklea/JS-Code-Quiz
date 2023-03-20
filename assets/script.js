@@ -9,7 +9,7 @@ const loadQuiz = () => {
   };
 
   loadQuiz();
-  
+
 const getSelected = () => {
     let answer;
     answerElements.forEach((answerElement) => {
