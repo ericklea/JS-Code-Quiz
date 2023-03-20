@@ -21,7 +21,8 @@ h1 {
     font-size: 50px;
 }
 
-.start-button {
+.start-button
+.question-container {
     position: absolute;
 }
 
