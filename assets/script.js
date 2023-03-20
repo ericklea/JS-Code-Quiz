@@ -48,16 +48,14 @@ function setStatusClass(element, correct) {
         element.classList.add('correct')
     }
 }
-    var quizQuestions = [
-        {
+    var quizQuestions = [ {
+            id: 0,
             question: "What is NOT a JavaScript Data Type?",
-            answers: [
-                a: "String"
-                b: "Number"
-                c: "Element"
-                d: "Boolean"
-            ],
-            correctAnswer: 'c'
+            answers: [{ text: "String", isCorrect: false },
+                      { text: "Number", isCorrect: false },
+                      { text: "Element", isCorrect: true },
+                      { text: "Boolean", iscorrect: false }
+            ]
         },
         {
             question: "Which symbol is used for comments in JavaScript?",
