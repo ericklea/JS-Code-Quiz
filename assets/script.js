@@ -54,39 +54,6 @@ let questions = [
             "x var = y",
             "y = var + x",
         ]
-    }
-
-    }
-        
-        function showQuestion(q) {
-              // select dom element
-            let questionDiv =document.getElementById('question');
-
-            titleDiv.textContent = q.question;
-
-            // selecting by query 
-            let ans = document.querySelectorAll('.answers');
-
-            ans.forEach(function(element, index){
-                element.textContent = q.answers[index];
-
-                element.addEventListener('click', function() {
-                    //Check correct answer
-                    if(q.correctAnswer == index) {
-            
-                    }
-                })
-            });
-
-        }
-
-        showquizQuestion(quizQuestion);
-
-        let btn = document.getElementById('btn');
-
-        btn.addEventListener('click', function() {
-
-        })
-      
-        showQuestion(quiz-question);
+    },
+];
            
