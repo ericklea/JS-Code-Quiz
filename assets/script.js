@@ -1,24 +1,21 @@
-const loadQuiz = () => {
-    deselectAnswers();
-    const currentQuizData = quizData[currentQuiz];
-    questionElement.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
-  };
-
-  loadQuiz();
-
-const getSelected = () => {
-    let answer;
-    answerElements.forEach((answerElement) => {
-      if (answerElement.checked) answer = answerElement.id;
-    });
-    return answer;
-  };
-const deselectAnswers = () => {
-    answerElements.forEach((answer) => (answer.checked = false));
+function startTimer(){
+    var counter = 5;
+    setInterval(function() {
+      counter--;
+      if (counter >= 0) {
+        span = document.getElementById("count");
+        span.innerHTML = counter;
+      }
+      if (counter === 0) {
+          alert('sorry, out of time');
+          clearInterval(counter);
+      }
+    }, 1000);
+  }
+  function start()
+  {
+      document.getElementById("count").style="color:green;";
+      startTimer();
   };
   const quiz = document.getElementById("quiz");
   const answerElements = document.querySelectorAll(".answer");
@@ -31,6 +28,20 @@ const deselectAnswers = () => {
   
   let currentQuiz = 0;
   let score = 0;
+
+
+
+function loadQuiz = () => {
+    deselectAnswers();
+    const currentQuizData = quizData[currentQuiz];
+    questionElement.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+  };
+
+  loadQuiz();
 
 const quizData = [
     {
@@ -75,6 +86,28 @@ const quizData = [
         correct: "a",
     },
 ];
+
+function getSelected = () => {
+    let answer;
+    answerElements.forEach((answerElement) => {
+      if (answerElement.checked) answer = answerElement.id;
+    });
+    return answer;
+  };
+function deselectAnswers = () => {
+    answerElements.forEach((answer) => (answer.checked = false));
+  };
+  const quiz = document.getElementById("quiz");
+  const answerElements = document.querySelectorAll(".answer");
+  const questionElement = document.getElementById("question");
+  const a_text = document.getElementById("a_text");
+  const b_text = document.getElementById("b_text");
+  const c_text = document.getElementById("c_text");
+  const d_text = document.getElementById("d_text");
+  const submitButton = document.getElementById("submit");
+  
+  let currentQuiz = 0;
+  let score = 0;
 
   submitButton.addEventListener("click", () => {
     const answer = getSelected();
