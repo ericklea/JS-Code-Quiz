@@ -31,3 +31,18 @@ h1 {
     font-weight: bold;
     padding: 15px 30px;
 }
+
+.question-container {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.question-container header {
+    height: 70px;
+    padding: 0 30 px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+
+}
