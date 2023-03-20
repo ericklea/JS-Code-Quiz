@@ -4,6 +4,9 @@ var questionElement = document.getElementById('question')
 var answerButtonsElement = doucment.getElementById('answer-buttons')
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+
+})
 
 function startGame() {
     startButton.classList.add
@@ -34,6 +37,12 @@ function selectAnswer(e) {
     })
 }
     
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if(correct) {
+        element.classList.add('correct')
+    }
+}
     var quizQuestions = [
         {
             question: "What is NOT a JavaScript Data Type?",
