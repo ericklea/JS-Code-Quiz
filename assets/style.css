@@ -6,24 +6,15 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh
-    
-}
-
-h1 {
-    position: absolute;
-    font-size: 50px;
+    background: green;
 }
 
 .start-button
 .question-container {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%. -50%);
 }
 
 .start-button button {
@@ -44,5 +35,27 @@ h1 {
     align-items: center;
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
+
+}
+
+.question-container header .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.question-container header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.question-container header .timer .timer-text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
 
 }
