@@ -12,7 +12,6 @@ function startGame() {
 
 }
 
-
     function showQuestions(question) {
         questionElement.innerText = question.question
 
@@ -69,59 +68,4 @@ function startGame() {
             correctAnswer: 'a'
         }
     ];
-}
-
-function showResults(questions, quizContainer, resultsContainer){
-
-    answersContainer = quizContainer.querySelectorAll('.answers');
-
-    var userAnswer=""
-    var numbCorrect= 0;
-
-    for(var i=0; i<questions.length; i++){
-        userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-
-        if(userAnswer===questions[i].correctAnswer){
-            numbCorrect++;
-        }
-    }
-
-    resultsContainer.innerHTML = numbCorrect + ' out of ' + questions.length;
-}
-
-//show questions
-showQuestions(questions, quizContainer);
-
-var output = [];
-var answers;
-
-for(var i=0; i<questions.length; i++){
-
-    answers = [];
-
-    for(letter in questions[i].answers){
-
-        answers.push(
-            '<label>'
-                + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                + leter + ':'
-                + questions[i].answers[letter]
-            + '<label>'
-        );
-    }
-
-    output.push(
-        '<div class="question">' + questions[i].question + '</div>'
-        + '<div class="answers">' + answers.join('') + '</div>'
-    );
-}
-
-quizContainer.innerHTML = output.join('');
-//when user clicks submit, show results
-submitButton.onclick = function(){
-    showResults(questions,quizContainer, resultsContainer);
-}
-
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
-
 }
