@@ -20,10 +20,22 @@ body {
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.quiz-container.activeQuiz
+.results-container.activeResults {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .start-button button {
     font-size: 25px;
     font-weight: bold;
     padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
 }
 
 .question-container {
