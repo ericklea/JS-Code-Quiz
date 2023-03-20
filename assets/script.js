@@ -21,7 +21,8 @@ function startGame() {
             if (answer.correct) {
                 button.dataset.correct = answeer.correct 
             }
-
+            button.addEventListener('click', selectAnswer)
+            answerButtonsElement.appendChild(button)
         }
 
     var quizQuestions = [
