@@ -1,59 +1,44 @@
-let questions = [
+const quizData = [
     {
-        id: 1,
         question: "What is NOT a JavaScript Data Type?",
-        answer: "Element",
-        option: [
-            "String",
-            "Number",
-            "Element",
-            "Boolean",
-        ]
+        a: "String",
+        b: "Number",
+        c: "Element",
+        d: "Boolean",
+        correct: "c",
+    
     },
     {
-        id: 2,
         question: "Which symbol is used for comments in JavaScript?",
-        answer: "//",
-        option: [
-            "//",
-            "<!",
-            "#",
-            "&",
-
-        ]
+        a: "//",
+        b: "<!",
+        c: "#",
+        d: "&",
+        correct: "a",
     },
     {
-        id: 3,
         question: "Which of the following is a looping structure in JavaScript?",
-        answer: "For",
-        option: [
-            "Also",
-            "Too",
-            "Four",
-            "For",
-        ]
+        a: "Also",
+        b: "Too",
+        c: "Four",
+        d: "For",
+        correct: "d",
     },
     {
-        id: 4,
         question: "In JavaScript, what does NULL mean?",
-        answer:  "No Value",
-        option: [
-            "Equal Value",
-            "No Value",
-            "Maximun Value",
-            "Undefined",
-        ]
+        a: "Equal Value",
+        b: "No Value",
+        c: "Maximun Value",
+        d: "Undefined",
+        correct: "b",
     },
     {
-        id: 5;
         question: "How do you declare a varialbe in Javascript?",
-        answer: "var x = y"
-        option: [
-            "var x = y",
-            "var & x = y",
-            "x var = y",
-            "y = var + x",
-        ]
+        a: "var x = y",
+        b: "var & x = y",
+        c: "x var = y",
+        d: "y = var + x",
+        correct: "a",
     },
 ];
 
