@@ -5,6 +5,8 @@ var answerButtonsElement = doucment.getElementById('answer-buttons')
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
 
 })
 
