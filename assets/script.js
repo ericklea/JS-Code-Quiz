@@ -48,7 +48,7 @@
        // element.classList.add('correct')
     }
 }
-    let quiz-question = {
+    let quizQuestion = {
             question: 'What is NOT a JavaScript Data Type?',
             answers: ['String', 'Number', 'Element', 'Boolean']
             correctAnswer: 2
@@ -65,9 +65,24 @@
 
             ans.forEach(function(element, index){
                 element.textContent = q.answers[index];
+
+                element.addEventListener('click', function() {
+                    //Check correct answer
+                    if(q.correctAnswer == index) {
+            
+                    }
+                })
             });
 
         }
+
+        showquizQuestion(quizQuestion);
+
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function() {
+
+        })
       
         showQuestion(quiz-question);
             question: "Which symbol is used for comments in JavaScript?",
