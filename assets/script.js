@@ -1,3 +1,4 @@
+// Quiz questions //
 var quizData = [
     {
         question: "What is NOT a JavaScript Data Type?",
@@ -41,6 +42,7 @@ var quizData = [
         correct: "a",
     },
 ];
+// For the start button and timer to run //
 var startButton = document.querySelector(".start-button");
 startButton.addEventListener("click", start)
 function startTimer(){
@@ -59,9 +61,10 @@ function startTimer(){
   }
   function start()
   {
-      document.getElementById("count").style="color:green;";
+      document.getElementById("count");
       startTimer();
   };
+  // For calling quiz question variables, and for the submit button to work with selecting them //
   var quiz = document.getElementById("quiz");
   var answerElements = document.querySelectorAll(".answer");
   var questionElement = document.getElementById("question");
@@ -75,7 +78,7 @@ function startTimer(){
   let score = 0;
 
 
-
+// For text of quiz questions //
 function loadQuiz () {
     deselectAnswers();
     var currentQuizData = quizData[currentQuiz];
@@ -89,7 +92,7 @@ function loadQuiz () {
   loadQuiz();
 
 
-
+// For when you select an answer //
 function getSelected () {
     let answer;
     answerElements.forEach((answerElement) => {
@@ -100,7 +103,7 @@ function getSelected () {
 function deselectAnswers () {
     answerElements.forEach((answer) => (answer.checked = false));
   };
-
+// For when you click submit on your answer //
   submitButton.addEventListener("click", function (event){
     var answer = getSelected();
     if (answer) {
@@ -114,6 +117,7 @@ function deselectAnswers () {
 
  }});
 
+ // For the score tracker //
  var playerInitials;
  var playerScore;
  var gameResult = {} ;
