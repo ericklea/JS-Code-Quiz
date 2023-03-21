@@ -14,9 +14,11 @@ To run this application, install VSCode to load the html, css and javascript fil
 #Usage
 To use this application, first you must follow the following link https://.ericklea.github.io/JS-Code-Quiz/
 Then, you must click on the start button. 
-Then you must answer the questions presented.
-To answer the questions, click on the circle next to the answer you choose, then click submit, to submit your answer, and then present you with the next question. 
-After you have answered all 5 questions, within the timed count amount of 60 seconds, you will presented with your score. 
+![image of start button](assets/start.png)
+Then you must answer the questions presented. There are five questions total you must answer. To answer the questions, click on the circle next to the answer you choose, then click submit, to submit your answer, and then present you with the next question.
+![image of answering question](assets/questionexample.png) 
+After you have answered all 5 questions, within the timed count amount of 60 seconds, you will presented with your score.
+![image of final score](assets/finalscore.png)
 
 #Credits
 For this application I utilized ideas from html, css and javascript code from activities from the University of Utah Coding Bootcamp, as well as ideas from https://w3schools.com, https://stackoverflow.com, https://youtube.com, https://developer.mozilla.org/, and https://foolishdeveloper.com/. And additionally, I received assistance from TA Benjamin Bushman.
