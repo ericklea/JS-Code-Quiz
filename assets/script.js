@@ -117,20 +117,3 @@ function deselectAnswers () {
 
  }});
 
- // For the score tracker //
- var playerInitials;
- var playerScore;
- var gameResult = {} ;
- var highscoreList = [] ;
-
- function highScores () {
-    playerInitials = $('nameTag').text();
-    playerScore = guessedWrong.length;
-
-    gameResult = {player: playerInitials, score: playerScore};
-    highscoreList.push(gameResult);
-    highscoreList.sort(function(a,b) {return (b.score - a.score )});
-
-    $('#score1').text(highscoreList[0].player + " - score: "+ highscoreList[0].score);
-
- };
